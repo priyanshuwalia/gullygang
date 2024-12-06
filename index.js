@@ -8,6 +8,12 @@ app.get(`/`, (req,res)=>{
         msg:"hello there"
     })  
 } );
+app.post(`/`, (req,res)=>{
+    console.log("kyaa haal h baaabe")
+    res.json({
+        msg:"hello there"
+    })  
+} );
 app.listen(port, ()=>{
     console.log(`this is running on port ${port}`)
 });
